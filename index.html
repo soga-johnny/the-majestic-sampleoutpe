@@ -20,6 +20,10 @@
                         this.toggle = false;
                         this.vid.pause();
                     }.bind(this));
+                    
+                    marker.addEventListener('click', function () {
+                        window.location.href = 'https://for-two.net';
+                    }
                 },
             });
         </script>
@@ -36,9 +40,7 @@
             gesture-detector
         >
                 <a-assets>
-                    <a href="https://for-two.net">
-                        <div style="width: fit-content; height: fit-content;">
-                            <video
+                           <video
                                 id="vid"
                                 src="assets/asset.mp4"
                                 preload="auto"
@@ -50,8 +52,6 @@
                                 muted
                                 playsinline
                            ></video>
-                        </div>
-                    </a>
                 </a-assets>
 
                 <a-marker
