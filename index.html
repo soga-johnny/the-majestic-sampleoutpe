@@ -21,9 +21,9 @@
                         this.vid.pause();
                     }.bind(this));
                     
-                    marker.addEventListener('click', function () {
+                    this.vid.addEventListener('click', function () {
                         window.location.href = 'https://for-two.net';
-                    }
+                    }.bind(this));
                 },
             });
         </script>
