@@ -14,7 +14,10 @@
                     marker.addEventListener('markerFound', function () {
                         this.toggle = true;
                         this.vid.play();
-                        window.location.href = 'https://for-two.net';
+                        
+                        this.vid.addEventListener('click', function () {
+                            window.open('URL');
+                        }
                     }.bind(this));
 
                     marker.addEventListener('markerLost', function () {
