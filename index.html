@@ -14,15 +14,12 @@
                     marker.addEventListener('markerFound', function () {
                         this.toggle = true;
                         this.vid.play();
+                        window.location.href = 'https://for-two.net';
                     }.bind(this));
 
                     marker.addEventListener('markerLost', function () {
                         this.toggle = false;
                         this.vid.pause();
-                    }.bind(this));
-                    
-                    this.vid.addEventListener('click', function () {
-                        window.location.href = 'https://for-two.net';
                     }.bind(this));
                 },
             });
